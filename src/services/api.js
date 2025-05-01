@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const API_URL = 'http://localhost:3000'
+// Ganti URL API lokal dengan URL Vercel backend
+const API_URL = import.meta.env.VITE_API_URL || 'https://cs9-backend-dzaky.vercel.app'
 
 const api = axios.create({
   baseURL: API_URL,
